@@ -3,6 +3,8 @@ Author: **Tim Blazytko**
 
 _Provides automated reverse engineering assistance through the use of local large language models (LLMs) on consumer hardware._
 
+# NOTE: THIS REPO ONLY HAS MINOR CHANGES SO THE README, BESIDES THIS, WILL REMAIN UNCHANGED 
+
 ## Description:
 
 _ReverserAI_ is a research project designed to automate and enhance reverse engineering tasks through the use of locally-hosted large language models (LLMs). Operating entirely offline, this initial release features the automatic suggestion of high-level, semantically meaningful function names derived from decompiler output. _ReverserAI_ is provided as a Binary Ninja plugin; however, its architecture is designed to be extended to other reverse engineering platforms such as IDA and Ghidra.
