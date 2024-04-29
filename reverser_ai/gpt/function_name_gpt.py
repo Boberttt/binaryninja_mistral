@@ -59,9 +59,7 @@ class FunctionNameGPT:
         # Constructing a detailed prompt to guide the LLM in generating a suitable function name
         user_prompt = (
             f"<s>[INST]Given the following decompiler output for a function, "
-            f"analyze its operations, logic, and any identifiable patterns to suggest a suitable function name. "
-            f"Your response should strictly be the function name suggestion and up to 20 characters. "
-            f"Discard all explanations or content, only the suggested name.[/INST] add_two_values</s> "
+            f"analyze its operations, logic, and any identifiable patterns to give a function summary. "
             f"[INST]Here's the code:\n {code}[/INST]"
         )
         return self.agent.build_prompt(user_prompt)
@@ -93,7 +91,7 @@ class FunctionNameGPT:
         try:
             # Attempts to query the LLM for a name suggestion and filter the output
             suggested_name = self.query_gpt_for_function_name_suggestion(code)
-            return self.filter_output(suggested_name)
+            return suggested_name
         except:
             # Raise an error
             raise ValueError(
