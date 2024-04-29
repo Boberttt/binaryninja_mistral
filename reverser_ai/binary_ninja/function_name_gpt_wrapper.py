@@ -37,12 +37,12 @@ class FunctionNameGPTWrapper:
         """
         config = {}
         # Access each setting and specify the correct setting identifier
-        config["use_mmap"] = Settings().get_bool("reverser_ai.use_mmap")
-        config["n_threads"] = Settings().get_integer("reverser_ai.n_threads")
+        config["use_mmap"] = Settings().get_bool("mistral.use_mmap")
+        config["n_threads"] = Settings().get_integer("mistral.n_threads")
         config["n_gpu_layers"] = Settings().get_integer(
-            "reverser_ai.n_gpu_layers")
-        config["seed"] = Settings().get_integer("reverser_ai.seed")
-        config["verbose"] = Settings().get_bool("reverser_ai.verbose")
+            "mistral.n_gpu_layers")
+        config["seed"] = Settings().get_integer("mistral.seed")
+        config["verbose"] = Settings().get_bool("mistral.verbose")
 
         return config
 
