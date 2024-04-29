@@ -3,7 +3,8 @@ Author: **Tim Blazytko**
 
 _Provides automated reverse engineering assistance through the use of local large language models (LLMs) on consumer hardware._
 
-# NOTE: THIS REPO ONLY HAS MINOR CHANGES SO THE README, BESIDES THIS, WILL REMAIN UNCHANGED 
+# NOTE: THIS REPO ONLY HAS MINOR CHANGES SO THE README, BESIDES THIS SECTION, WILL REMAIN UNCHANGED
+All this does is it logs the summary of the current function via mistral:7b
 
 ## Description:
 
