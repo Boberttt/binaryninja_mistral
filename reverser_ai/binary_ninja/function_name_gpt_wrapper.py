@@ -86,7 +86,7 @@ class FunctionNameGPTWrapper:
         try:
             suggested_name = self.get_function_name_suggestion(f)
             log_info(
-                f"Summary of: {f.name} \n{suggested_name}", logger="ReverseAI")
+                f"Summary of: {f.name} \n{suggested_name}", logger="Mistral")
             # Apply the suggested name to the function
         # Catch error and print warning
         except ValueError as err:
