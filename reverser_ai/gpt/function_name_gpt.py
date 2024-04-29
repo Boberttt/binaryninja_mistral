@@ -60,6 +60,8 @@ class FunctionNameGPT:
         user_prompt = (
             f"<s>[INST]Given the following decompiler output for a function, "
             f"analyze its operations, logic, and any identifiable patterns to give a function summary. "
+            f"First respond with a analysis, line by line, in a number list, "
+            f"then make a brief 2-5 sentence summary of the function as a whole."
             f"[INST]Here's the code:\n {code}[/INST]"
         )
         return self.agent.build_prompt(user_prompt)
