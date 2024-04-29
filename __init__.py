@@ -3,16 +3,9 @@ from binaryninja.settings import Settings
 
 from .reverser_ai.binary_ninja import (plugin_wrapper_rename_all_functions_bg,
                                        plugin_wrapper_rename_function_bg)
-
-PluginCommand.register(
-    "Mistral\\Rename All Functions",
-    "Renames all functions using AI-generated suggestions.",
-    plugin_wrapper_rename_all_functions_bg
-)
-
 PluginCommand.register_for_function(
-    "Mistral\\Rename Current Function",
-    "Renames the selected function with an AI-generated suggestion.",
+    "Mistral Summarize Current Function",
+    "Summarize current function via mistral's 7b model.",
     plugin_wrapper_rename_function_bg
 )
 
