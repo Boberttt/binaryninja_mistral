@@ -90,4 +90,4 @@ class FunctionNameGPTWrapper:
             # Apply the suggested name to the function
         # Catch error and print warning
         except ValueError as err:
-            log_warn(f"Function {f.name}: {err}", logger="ReverseAI")
+            log_warn(f"Function {f.name}: {err}", logger="Mistral")
