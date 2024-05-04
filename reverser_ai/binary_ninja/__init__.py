@@ -198,7 +198,7 @@ def plugin_wrapper_rename_function_bg(bv, f):
     """
     background_task = BGTaskFunction(
         bv,
-        "Querying GPT for a function name suggestion and applying it to the selected function.",
+        "Querying GPT for a function summary",
         plugin_wrapper_rename_function,
         f
     )
